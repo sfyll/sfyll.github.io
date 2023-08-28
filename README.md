@@ -1,1 +1,1 @@
-source for [sfyl.xyz](www.sfyl.xyz)
+source for [sfyl.xyz](https://sfyl.xyz)
