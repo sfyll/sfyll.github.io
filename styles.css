@@ -92,16 +92,26 @@ code,
   border-radius: 3px;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+:root {
+  --main-color: #ecf0f1;
+  --point-color: #555;
+  --size: 0.5em;  /* Reduced from 1em */
 }
 
-.loading-icon {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  border-top: 4px solid black;
-  width: 24px;
-  height: 24px;
-  animation: spin 2s linear infinite;
+.loader {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+  font-size: 0.5em;  /* Reduced from 1em */
+  margin-left: 5px;
+}
+
+.loader__element {
+  border-radius: 100%;
+  background-color: var(--point-color);
+  width: var(--size);
+  height: var(--size);
+  margin: 0 calc(var(--size)/4);
+  display: inline-block;
 }
