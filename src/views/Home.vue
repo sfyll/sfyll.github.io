@@ -14,9 +14,9 @@
                 </heading>
                 <body class="mb-0">
                     High frequency trader turned byte generalist.<br/>
-                    Curious? Try the <span class="no-wrap"><router-link to="/about">About</router-link> page</span>,
-                    or check my <router-link to="/blog">Blog</router-link>.<br/>
-                    Building? Get my <router-link to="/Contact">Contact</router-link> and reach out!
+                    Curious? Try the <span @click="toggleMenu" class="no-wrap"><router-link to="/about">About</router-link> page</span>,
+                    or check my <span @click="toggleMenu"><router-link to="/blog">Blog</router-link></span>.<br/>
+                    Building? Get my <span @click="toggleMenu"><router-link to="/Contact">Contact</router-link></span> and reach out!
                 </body>
             </section>
         </div>    
@@ -27,6 +27,11 @@
 export default {
     name: 'Home',
     components: {
+    },
+    methods: {
+        toggleMenu: function() {
+            this.$store.commit('toggleMobileNav', false);
+        }
     }
 }
 </script>

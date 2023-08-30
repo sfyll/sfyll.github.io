@@ -149,10 +149,6 @@ code,
   border-radius: 3px;
 }
 
-img {
-    margin: auto;
-}
-
 #nav > header > div.mr-6 > h3 > a > span > a { /* Chrome gave me this selector I hope it works */
     border: none !important;
 }

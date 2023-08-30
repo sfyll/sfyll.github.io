@@ -14,7 +14,8 @@ export default new Vuex.Store({
     persist.plugin
   ],
   state: {
-    dark: window.matchMedia('(prefers-color-scheme: dark)').matches
+    dark: window.matchMedia('(prefers-color-scheme: dark)').matches,
+    showMobileNav: false,
   },
   mutations: {
     switchTheme(state) {
@@ -30,7 +31,10 @@ export default new Vuex.Store({
         document.body.classList.add((state.dark ? 'dark': 'light'))
         document.body.classList.remove(transitionClass)
       }, 600)
-    }
+    },
+    toggleMobileNav(state, payload) {
+      state.showMobileNav = payload;
+    },
   },
   actions: {
   },
