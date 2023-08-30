@@ -1,7 +1,7 @@
 <template>
     <span class="md:flex flex-row items-center justify-center space-x-3">
-        <span v-for="method in this.methods" :key="[method]">
-            <ContactMethod :method="method"/>
+        <span v-for="method in this.methods" :key="method.id">
+        <ContactMethod :method="method"/>
         </span>
     </span>
 </template>

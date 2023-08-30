@@ -14,7 +14,7 @@
     --light-scrollbar-thumb: #d8dee9;
     --light-scrollbar-track: #e5e9f0;
     --light-border: #434c5e;
-    --link-color: #0110dd;
+    --link-color: #2255cb;
     /* gradient */
     --gradient: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
 }
@@ -179,15 +179,32 @@ img {
     background-color: var(--dark-scrollbar-thumb);
 }
 
+.dark img {
+    background-color: var(--light-bg);
+    border-radius: 4px; /* Optional, if you want rounded corners */
+}
+
 .dark a:link {
     color:var(--dark-link-color)
 }
+
+.dark a:visited {
+    color:var(--dark-link-color);
+}
+
+
 
 /* light theme */
 .light {
     background-color: var(--light-bg);
     color: var(--light-text);
     scrollbar-color: var(--light-scrollbar-thumb) var(--light-scrollbar-track);
+}
+.light .home, .light .subheading {
+    color: var(--light-text);
+}
+.light #nav a, .light .heading {
+    color: var(--light-heading);
 }
 .light #nav a.router-link-exact-active {
     border: 1.5px solid var(--light-border);
@@ -203,10 +220,10 @@ img {
     color: var(--link-color)
 }
 
-.dark img {
-    background-color: var(--light-bg);
-    border-radius: 4px; /* Optional, if you want rounded corners */
+.light a:visited {
+    color:var(--link-color);
 }
+
 /* purgecss end ignore */
 
   
