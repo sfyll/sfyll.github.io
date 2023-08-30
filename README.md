@@ -1,1 +1,1 @@
-source for [sfyl.xyz](https://sfyl.xyz)
+Inspired from the amazing https://til.pm
