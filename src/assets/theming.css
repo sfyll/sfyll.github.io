@@ -41,6 +41,10 @@
     }
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .dark-to-light, .light-to-dark {
     animation-duration: 700ms;
 }
@@ -191,8 +195,6 @@ img {
 .dark a:visited {
     color:var(--dark-link-color);
 }
-
-
 
 /* light theme */
 .light {

@@ -16,9 +16,9 @@
                             </a>
                         </h3>
                     </div>
-                    <ul id="navButtons" class="align-baseline sm:block flex-wrap md:flex md:items-center flex-grow px-2 md:p-0 hidden md:bg-transparent">
+                    <ul id="navButtons" class="align-baseline sm:block flex-wrap md:flex md:items-center flex-grow px-2 md:p-0 hidden md:bg-transparent justify-center">
                         <li><router-link to="/">Home</router-link></li>
-                        <li><router-link to="/about">About Me</router-link></li>
+                        <li><router-link to="/about"><span class="no-wrap">About Me</span></router-link></li>
                         <li><router-link to="/blog">Blog</router-link></li>
                         <li><router-link to="/contact">Contact</router-link></li>
                     </ul>

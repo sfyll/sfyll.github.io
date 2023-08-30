@@ -14,9 +14,9 @@
                 </heading>
                 <body class="mb-0">
                     High frequency trader turned byte generalist.<br/>
-                    Curious ? try the <router-link to="/about">About</router-link> page,
+                    Curious? Try the <span class="no-wrap"><router-link to="/about">About</router-link> page</span>,
                     or check my <router-link to="/blog">Blog</router-link>.<br/>
-                    Building ? Get my <router-link to="/Contact">Contact</router-link> and reach out!
+                    Building? Get my <router-link to="/Contact">Contact</router-link> and reach out!
                 </body>
             </section>
         </div>    
