@@ -11,6 +11,13 @@ import './assets/theming.css'
 import Heading from './components/Heading'
 import Subheading from './components/Subheading'
 import Butter from 'buttercms'
+import VueAnalytics from 'vue-analytics';
+
+
+Vue.use(VueAnalytics, {
+  id: 'G-Q6423EHZHZ',
+  router
+});
 
 Unicon.add([uniSun, uniMoon, uniGithub, uniBars, uniFavoriteMonochrome, uniCheckCircleMonochrome, uniArrowLeft, uniArrowRight])
 Vue.use(Unicon)
