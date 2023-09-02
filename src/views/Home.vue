@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="md:flex md:mt-16 mb-8 items-center justify-between">
-            <section class="md:w-full">
+            <section class="md:w-full mt-1">
                 <a class="content-center">
                     <img src="../assets/cousin_skeeter_transparant.jpeg" title="Art from peakpx" class="rounded-full content-center mx-auto h-48 w-48">
                 </a>
