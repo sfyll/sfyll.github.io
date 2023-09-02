@@ -3,12 +3,12 @@
         <div class="md:flex md:mt-16 mb-8 items-center justify-between">
             <section class="md:w-full mt-1">
                 <a class="content-center">
-                    <img src="../assets/luff1.png" title="Luffy" class="rounded-full content-center mx-auto h-48 w-48 transparent-img transparent-img-light">
+                    <img src="../assets/luff1.png" title="Luffy" class="content-center mx-auto h-48 w-48 transparent-img transparent-img-light">
                 </a>
             </section>
         </div>
         <div class="md:flex md:mt-8 mb-24 items-center justify-between">
-            <section class="md:w-full">
+            <section class="md:w-full mt-1">
                 <heading>
                     Hey, I am <span class="rainbow">sfyl</span>
                 </heading>

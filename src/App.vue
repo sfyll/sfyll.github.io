@@ -11,7 +11,7 @@
                         </h3>
                     </div>
                     <ul id="navButtons"
-                        class="align-baseline sm:block flex-wrap md:flex md:items-center flex-grow px-2 md:p-0 hidden md:bg-transparent justify-center">
+                        class="align-baseline flex-wrap md:flex md:items-center flex-grow px-2 md:p-0 hidden md:bg-transparent justify-center">
                         <li><router-link to="/">Home</router-link></li>
                         <li><router-link to="/about"><span class="no-wrap">About Me</span></router-link></li>
                         <li><router-link to="/blog">Blog</router-link></li>
@@ -52,8 +52,8 @@
 
             <!-- Mobile Navigation appearing below the header when clicked -->
             <Transition name="appear">
-                <div v-if="isMobile && showMobileNav" id="nav" class="flex flex-col items-center h-full">
-                    <ul id="mobileNavButtons" class="flex flex-col items-center w-full">
+                <div v-if="isMobile && showMobileNav" id="mobilenav" class="flex flex-col items-center h-full">
+                    <ul id="mobilenavbuttons" class="flex flex-col items-center w-full">
                         <li @click="toggleMenu"><router-link to="/">Home</router-link></li>
                         <li @click="toggleMenu"><router-link to="/about"><span class="no-wrap">About Me</span></router-link>
                         </li>
@@ -72,14 +72,12 @@
     user-select: none;
 }
 
+/* for below scss @mixing would be cleaner */
 #nav {
-    left: 0;
-    width: 60%;
-    z-index: 999;
-    display: block;
-    position: absolute;
+    position: sticky;
+    top: 0;
     backdrop-filter: blur(5px);
-    background-color: rgba(46,52,64, 0.9);
+    z-index: 77727
 }
 
 #nav a:link {
@@ -90,9 +88,40 @@
     display: inline;
 }
 
-#mobileNavButtons>li {
+#mobilenav {
+    will-change: transform;
+    left: 0;
+    width: 60%;
+    z-index: 999;
+    display: block;
+    position: absolute;
+    backdrop-filter: blur(5px);
+}
+
+#mobilenav a:link {
+    text-decoration: none;
+}
+
+#mobilenav li {
+    display: inline;
+}
+
+#mobilenavbuttons li {
     margin: 15px 0;
 }
+
+.dark #mobilenavbuttons li {
+    color: var(--dark-text);
+}
+
+.dark #mobilenav {
+    background-color: rgba(46,52,64, 0.9);
+}
+
+.light #mobilenav {
+    background-color: rgba(236, 239, 244, 0.669);
+}
+
 </style>
 
 <script>
@@ -129,7 +158,6 @@ export default {
         },
     },
     mounted() {
-        document.body.classList.add((this.$store.state.dark ? 'dark' : 'light'))
         document.body.classList.add((this.$store.state.dark ? 'dark' : 'light'))
     },
     beforeDestroy() {
