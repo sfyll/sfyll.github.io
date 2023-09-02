@@ -5,7 +5,7 @@
                 <heading class="mb-2">
                     {{ post.data.title }}
                 </heading>
-                <br/><span v-if="post.data.published" class="text-sm">(published {{ convertIsoDate(post.data.published) }})</span>
+                <span v-if="post && post.data && post.data.published" class="text-sm">(published {{ convertIsoDate(post.data.published) }})</span>
             </section>
         </div>
         <div class="md:mt-8 text-left">
@@ -20,7 +20,7 @@ import { parseISO, format } from 'date-fns'
 export default {
     data() {
         return {
-            post: {},
+            post: { data: {} },
         }
     },
     methods: {
@@ -31,8 +31,8 @@ export default {
     created() {
         this.$cms.post.retrieve(this.$route.params.post).then(res => {
             this.post = res.data
-        }).catch(res => {
-            console.log(res) // will figure out actual error handling later!
+        }).catch(error => {
+            console.error("Error fetching post:", error); // will figure out actual error handling later!
         })
     }
 }
