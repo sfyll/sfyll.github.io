@@ -1,14 +1,14 @@
 <template>
     <div class="home">
         <div class="md:flex md:mt-16 mb-8 items-center justify-between">
-            <section class="md:w-full">
+            <section class="md:w-full mt-1">
                 <a class="content-center">
-                    <img src="../assets/cousin_skeeter_transparant.jpeg" title="Art from peakpx" class="rounded-full content-center mx-auto h-48 w-48">
+                    <img src="../assets/luff1.png" title="Luffy" class="content-center mx-auto h-48 w-48 transparent-img transparent-img-light">
                 </a>
             </section>
         </div>
         <div class="md:flex md:mt-8 mb-24 items-center justify-between">
-            <section class="md:w-full">
+            <section class="md:w-full mt-1">
                 <heading>
                     Hey, I am <span class="rainbow">sfyl</span>
                 </heading>
@@ -22,6 +22,19 @@
         </div>    
     </div>
 </template>
+
+<style scoped>
+.dark .transparent-img {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.light .transparent-img-light {
+    background-color: transparent;
+    border-radius: 0;
+}
+</style>
+
 
 <script>
 export default {

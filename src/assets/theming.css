@@ -46,7 +46,7 @@
 }
 
 .dark-to-light, .light-to-dark {
-    animation-duration: 700ms;
+    animation-duration: 1000ms;
 }
 
 .dark-to-light {
@@ -152,6 +152,7 @@ code,
 #nav > header > div.mr-6 > h3 > a > span > a { /* Chrome gave me this selector I hope it works */
     border: none !important;
 }
+
 /* dark theme */
 .dark {
     background-color: var(--dark-bg);
@@ -162,10 +163,11 @@ code,
 .dark .home, .dark .subheading {
     color: var(--dark-text);
 }
-.dark #nav a, .dark .heading {
+.dark #nav a, .dark #mobilenav a, .dark .heading {
     color: var(--dark-heading);
 }
-.dark #nav a.router-link-exact-active, .dark .frame {
+
+.dark #nav a.router-link-exact-active, .dark #mobilenav a.router-link-exact-active, .dark .frame {
     border: 1.5px solid var(--dark-border);
 }
 ::-webkit-scrollbar {
@@ -200,10 +202,10 @@ code,
 .light .home, .light .subheading {
     color: var(--light-text);
 }
-.light #nav a, .light .heading {
+.light #nav a, .light #mobilenav a, .light .heading {
     color: var(--light-heading);
 }
-.light #nav a.router-link-exact-active {
+.light #nav a.router-link-exact-active, .light #mobilenav a.router-link-exact-active {
     border: 1.5px solid var(--light-border);
 }
 .light::-webkit-scrollbar-track {
@@ -224,3 +226,4 @@ code,
 /* purgecss end ignore */
 
   
+

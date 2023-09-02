@@ -19,13 +19,14 @@
     "gh-pages": "^6.0.0",
     "roboto-mono-webfont": "^2.0.986",
     "simple-icons": "^5.0.0",
-    "vue": "^2.6.11",
-    "vue-analytics": "^5.22.1",
-    "vue-router": "^3.2.0",
+    "vue": "^3.2.36",
+    "vue-gtag": "^2.0.1",
+    "vue-router": "^4.0.13",
     "vue-tooltip": "^0.1.0",
-    "vue-unicons": "^2.2.1",
-    "vuex": "^3.4.0",
-    "vuex-persist": "^2.2.0"
+    "vue-unicons": "^3.3.1",
+    "vuex": "^4.0.2",
+    "vuex-persist": "^2.2.0",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.7",
