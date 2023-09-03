@@ -15,6 +15,9 @@ export default createStore({
   mutations: {
     switchTheme(state) {
       state.dark = !state.dark;
+
+      document.querySelector("meta[name=theme-color]").setAttribute("content", state.dark ? "#2e3440" : "#eceff4");
+
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         return document.body.classList.replace((state.dark ? 'light' : 'dark'), (state.dark ? 'dark' : 'light'))
       }

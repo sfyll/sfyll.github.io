@@ -158,6 +158,10 @@ export default {
         },
     },
     mounted() {
+        const metaThemeColor = document.createElement('meta');
+        metaThemeColor.name = "theme-color";
+        metaThemeColor.content = this.$store.state.dark ? "#2e3440" : "#eceff4";
+        document.getElementsByTagName('head')[0].appendChild(metaThemeColor);
         document.body.classList.add((this.$store.state.dark ? 'dark' : 'light'))
     },
     beforeDestroy() {
