@@ -1,48 +1,24 @@
-name: Deploy to GitHub Pages
-
+name: Deploy to GitHub pages
 on:
   push:
-    branches:
-      - main
-
-env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+    branches: [ main ]
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-          token: ${{ env.GITHUB_TOKEN }}
+    - uses: actions/checkout@v2
 
-    - name: Setup Node.js
+    - name: Generate static VuePress files
       uses: actions/setup-node@v2
       with:
-        node-version: '16.20.2'
+        node-version: '16'
+    - run: npm ci
+    - run: npm run build
 
-    - name: Cache Node.js modules
-      uses: actions/cache@v2
+    - name: push to destination branch
+      uses: ad-m/github-push-action@v0.5.0
       with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build
-      run: npm run build
-
-    - name: Set Git User
-      run: |
-        git config user.name "GitHub Action"
-        git config user.email "action@github.com"
-
-    - name: Deploy
-      run: npm run deploy
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        directory: ./dist
