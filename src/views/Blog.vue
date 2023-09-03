@@ -3,7 +3,7 @@
         <div class="md:mt-16">
             <heading class="mb-2">Posts</heading>
             <section class="md:w-full sm:flex md:grid md:grid-flow-cols md:grid-cols-3">
-                <Card :href="`#/blog/${post.slug}`" left v-for="(post, index) in posts" class="mr-2" :key="`${post.slug}_${index}`">
+                <Card :href="`/blog/${post.slug}`" left v-for="(post, index) in posts" class="mr-2" :key="`${post.slug}_${index}`">
                     <heading small class="concatenation">{{ post.title }}</heading>
                     <subheading small>{{ post.summary }}</subheading>
                     <span class="float-right text-xs pt-2">{{ convertIsoDate(post.published) }}</span>
