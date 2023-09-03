@@ -12,33 +12,20 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '16'
-    - run: npm ci
     - run: npm run build
-    # Upload the build artifacts for the deploy job
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: dist
-        path: ./dist
 
   deploy:
     needs: build
     permissions:
       pages: write
       id-token: write
+    
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - name: Download build artifacts
-      uses: actions/download-artifact@v2
-      with:
-        name: dist
-        path: ./dist
+
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        path: ./dist
