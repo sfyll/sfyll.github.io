@@ -6,6 +6,7 @@ UPDATES:
 - Background handle transparant image bugs for blog-posts;
 - Simplistic About Me Version, portfolio type;
 - Many other difference in format;
+- Deploy workflow;
 
 TODOs:
 - Find a way to transition color-switch on the iOS top-bar (can't use keyframe).
