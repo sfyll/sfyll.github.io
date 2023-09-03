@@ -16,4 +16,10 @@ jobs:
     - run: npm ci
     - run: npm run build
 
-    - run: npm run deploy
+    - name: Deploy
+      run: |
+      git config user.name "GitHub Action"
+      git config user.email "action@github.com"
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      npm run deploy
+
