@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve",
     "deploy": "gh-pages -d dist",
-    "deployjob": "gh-pages -d dist -b gh-pages -r https://${GITHUB_TOKEN}@github.com/<username>/<repo>.git"
+    "deployjob": "gh-pages -d dist -b gh-pages -r https://${GITHUB_TOKEN}@github.com/SFYLL/sfyll.github.io.git"
   },
   "dependencies": {
     "@vue/compiler-dom": "^3.2.40",
