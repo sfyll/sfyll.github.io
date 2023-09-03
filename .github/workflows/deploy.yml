@@ -1,47 +1,21 @@
-name: Deploy to GitHub pages
+name: Push to gh-pages
+
 on:
   push:
-    branches: [ main, gh-pages ]
+    branches:
+      - main
 
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
     steps:
-       
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
         with:
-          node-version: '16.20.2'
+          fetch-depth: 0  # Fetch all history for all branches and tags
 
-      - run: npm ci
-      - run: npm run build
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: dist
-          path: ./dist
-
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-    
-      - name: Download build artifacts
-          uses: actions/download-artifact@v2
-          with:
-            name: dist
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+      - name: Push to gh-pages
+        run: |
+          git checkout gh-pages
+          git rebase main
+          git push origin gh-pages
