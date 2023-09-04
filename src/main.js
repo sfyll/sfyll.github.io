@@ -12,6 +12,7 @@ import Heading from './components/Heading'
 import Subheading from './components/Subheading'
 import Butter from 'buttercms'
 import VueGtag from "vue-gtag";
+import { createMetaManager } from 'vue-meta'
 
 const app = createApp(App);
 
@@ -29,4 +30,8 @@ app.config.globalProperties.$cms = Butter('81218e35deb9ccf0d22dbf9995b2c1d019fbd
 app.component('heading', Heading)
 app.component('subheading', Subheading)
 
-app.use(router).use(store).use(Unicon).mount('#app')
+app.use(router).use(store).use(Unicon).use(createMetaManager())
+
+await router.isReady()
+
+app.mount('#app')

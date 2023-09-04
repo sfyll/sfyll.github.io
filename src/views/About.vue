@@ -32,9 +32,21 @@
 
 
 <script>
-
+import { useMeta } from 'vue-meta'
 export default {
     components: {
-    }
+    },
+    setup () {
+        useMeta({
+        title: "The about section of sfyl",
+        htmlAttrs: { lang: 'en', amp: true },
+        description: "A quick summary of my different works",
+        og: {
+            title: "The about section of sfyl",
+            description: 'A quick summary of my different works',
+            image:"https://www.sfyl.xyz/favicon.ico"
+        },
+      })
+    },
 }
 </script>

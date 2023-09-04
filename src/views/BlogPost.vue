@@ -16,6 +16,7 @@
 
 <script>
 import { parseISO, format } from 'date-fns'
+import { useMeta } from 'vue-meta'
 
 export default {
     data() {
@@ -23,16 +24,29 @@ export default {
             post: { data: {} },
         }
     },
+    setup () {
+        useMeta({
+        title: 'The blog section of sfyl',
+        htmlAttrs: { lang: 'en', amp: true },
+        description: "sfyl's blog, mostly about crypto and finance",
+        og: {
+            title: "The blog section of sfyl",
+            description: "sfyl's blog, mostly about crypto and finance",
+            image:"https://www.sfyl.xyz/favicon.ico"
+        },
+        })
+    },
     methods: {
         convertIsoDate(iso_date) {
             return format(parseISO(iso_date), 'PP p')
-        }
+        },
     },
+
     created() {
         this.$cms.post.retrieve(this.$route.params.post).then(res => {
-            this.post = res.data
+            this.post = res.data;
         }).catch(error => {
-            console.error("Error fetching post:", error); // will figure out actual error handling later!
+            console.error("Error fetching post:", error); 
         })
     }
 }

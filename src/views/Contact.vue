@@ -13,10 +13,24 @@
 
 <script>
 import ContactMethods from '../components/ContactMethods'
+import { useMeta } from 'vue-meta'
 
 export default {
     components: {
         ContactMethods
     },
+    setup () {
+        useMeta({
+        title: 'The contact section of sfyl',
+        htmlAttrs: { lang: 'en', amp: true },
+        description: "If you want to talk, contact sfyl",
+        og: {
+            title: "The contact section of sfyl",
+            description: "If you want to talk, contact sfyl",
+            image:"https://www.sfyl.xyz/favicon.ico"
+        },
+        })
+    }
 }
+
 </script>

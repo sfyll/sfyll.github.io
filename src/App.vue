@@ -126,10 +126,27 @@
 
 <script>
 import ThemeSwitcher from '@/components/ThemeSwitcher'
+import { useMeta } from 'vue-meta'
 
 export default {
     components: {
         ThemeSwitcher,
+    },
+    setup () {
+        useMeta({
+        htmlAttrs: { lang: 'en', amp: true },
+        title: 'The personal website of sfyl',
+        description: "High frequency trader turned byte generalist",
+        og: {
+            title: 'The personal website of sfyl',
+            description: 'High frequency trader turned byte generalist',
+            image:"https://www.sfyl.xyz/favicon.ico"
+        },
+        twitter: {
+            card: "summary"
+        }
+      })
+        
     },
     data() {
         return {

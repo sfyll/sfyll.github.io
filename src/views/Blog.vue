@@ -40,6 +40,7 @@
 <script>
 import Card from '../components/Card'
 import { format, parseISO } from 'date-fns'
+import { useMeta } from 'vue-meta'
 
 export default {
     data() {
@@ -48,6 +49,18 @@ export default {
             currentPage: 1,
             meta: null
         }
+    },
+    setup () {
+        useMeta({
+        title: 'The blog section of sfyl',
+        htmlAttrs: { lang: 'en', amp: true },
+        description: "sfyl's blog, mostly about crypto and finance",
+        og: {
+            title: "The blog section of sfyl",
+            description: "sfyl's blog, mostly about crypto and finance",
+            image:"https://www.sfyl.xyz/favicon.ico"
+        },
+        })
     },
     methods: {
         listPosts(page) {
