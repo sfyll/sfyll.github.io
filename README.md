@@ -13,4 +13,4 @@ Inspired from the amazing https://til.pm & 2λ.com.
 
 ## TODOs:
 - Implement color-switch transition for the iOS top bar (keyframes are not an option).
-- Utilize dynamic meta tags for improved social media rendering. Challenge: web crawlers don't favor frontend-rendered websites, and our HTML is bare until rendered!
+- Utilize dynamic meta tags for improved social media rendering.
