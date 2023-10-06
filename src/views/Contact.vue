@@ -21,13 +21,13 @@ export default {
     },
     setup () {
         useMeta({
-        title: 'The contact section of sfyl',
+        title: 'Get in touch',
         htmlAttrs: { lang: 'en', amp: true },
-        description: "If you want to talk, contact sfyl",
+        description: "Get sfyl's contact",
         og: {
-            title: "The contact section of sfyl",
-            description: "If you want to talk, contact sfyl",
-            image:"https://www.sfyl.xyz/favicon.ico"
+            title: "Get in touch",
+            description: "Get sfyl's contact",
+            image:"https://www.sfyl.xyz/transponder_snail.jpg"
         },
         })
     }
