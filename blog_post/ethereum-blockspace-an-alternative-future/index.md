@@ -1,7 +1,7 @@
 <div id="post-title">Ethereum Blockspace: An Alternative Future</div>
 <div id="post-date">2023-08-15</div>
 
-<div id="content">
+<div id="blogContent">
 As I make my way through the Malaysian tropical landscape, I am subjugated by the biodiversity. The plethora of fauna and flora is a sight to behold, at least for us, fellow Europeans. Obviously, as a crypto degenerate, I started drawing some parallels with the great flourishing of our ecosystem – zero-knowledge encryption and its applications, all types of rollups, account and domain abstractions, intent-based transactions, danksharding – you name it, it’s happening.
 <p></p>
 <br>

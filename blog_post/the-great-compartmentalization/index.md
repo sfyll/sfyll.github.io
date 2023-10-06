@@ -1,7 +1,7 @@
 <div id="post-title">The Great Compartmentalization</div>
 <div id="post-date">2022-09-26</div>
 
-<div id="content">
+<div id="blogContent">
 The longest reign just came to a halt. Queen Elizabeth had lived through a lot of the pieces that came to define our present. From the seeds of WWII to the fall of the Berlin Wall, From the Great Inflation to the Great Moderation, or from the Great Collaboration to the Great Disentanglement? Is the Queen’s death foreshadowing a gathering storm, a seismic shift in the global world order, yet so carefully constructed over the past century.
 Let’s submit ourselves to an exercise. By looking at history, we will try to answer if the current events are representative of a periodic and temporary pressure release, or the depiction of a more profound, structural change.
 
