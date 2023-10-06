@@ -20,7 +20,7 @@ The goal of this essay is not to present an in-depth, historical depiction of Et
 <br>
 <center>
 <figure>
-  <img src="./blog_post/ethereum-blockspace-an-alternative-future/Blockspace Marginal Economic Shifts Quadrant.png" class="padded" />
+  <img src="/blog_post/ethereum-blockspace-an-alternative-future/Blockspace Marginal Economic Shifts Quadrant.png" class="padded" />
   <figcaption>Blockspace Marginal Economic Shifts Quadrant</figcaption>
 </figure>
 </center><br>
@@ -46,7 +46,7 @@ Atomic arbitrage has interesting properties. Assuming a well-designed smart cont
 <br>
 <center>
 <figure>
-  <img src="./blog_post/ethereum-blockspace-an-alternative-future/Blockchain Pollution.png" class="padded" />
+  <img src="/blog_post/ethereum-blockspace-an-alternative-future/Blockchain Pollution.png" class="padded" />
   <figcaption>PGA Bots on Polygon</figcaption>
 </figure>
 </center><br>
@@ -62,7 +62,7 @@ Consequently, all the focus today is on how to enshrine PBS and reduce centraliz
 <br>
 <center>
 <figure>
-  <img src="./blog_post/ethereum-blockspace-an-alternative-future/Depiction of EV shift.png" class="padded" />
+  <img src="/blog_post/ethereum-blockspace-an-alternative-future/Depiction of EV shift.png" class="padded" />
   <figcaption>Crude Depiction of Extractable Value Split per Category</figcaption>
 </figure>
 </center><br>
@@ -99,7 +99,7 @@ Ultimately, a rollup centric future means that Ethereum execution layer block wi
 <br>
 <center>
 <figure>
-  <img src="./blog_post/ethereum-blockspace-an-alternative-future/Alternative Future block.png" class="padded" />
+  <img src="/blog_post/ethereum-blockspace-an-alternative-future/Alternative Future block.png" class="padded" />
   <figcaption>An Alternative Ethereum Block</figcaption>
 </figure>
 </center><br>
@@ -126,7 +126,7 @@ Hence, it puzzles me why we see no conversation on proving markets from the MEV 
 <br>
 <center>
 <figure>
-  <img src="./blog_post/ethereum-blockspace-an-alternative-future/gated-function.png" class="padded" />
+  <img src="/blog_post/ethereum-blockspace-an-alternative-future/gated-function.png" class="padded" />
   <figcaption>Hypothetical ungated proving function for Axiom's block hash verifications</figcaption>
 </figure>
 </center><br>
@@ -143,7 +143,7 @@ As I sail through the Tahan River, I am amazed by the beautiful arch of Neram Tr
 <br>
 <center>
 <figure>
-  <img src="./blog_post/ethereum-blockspace-an-alternative-future/Taman Negara Arched Tree.jpeg" class="padded" />
+  <img src="/blog_post/ethereum-blockspace-an-alternative-future/Taman Negara Arched Tree.jpeg" class="padded" />
   <figcaption>Taman Negara</figcaption>
 </figure>
 </center><br>

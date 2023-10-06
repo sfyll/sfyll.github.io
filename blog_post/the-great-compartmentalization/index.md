@@ -22,7 +22,7 @@ From now on, let’s focus on Germany as China’s end-goal was the same, but th
 <br>
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Global trade to GDP.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Global trade to GDP.png" class="padded" />
   <figcaption>Figure 1: ECB, 09/2022, Real harmonised competitiveness indicator CPI deflated</figcaption>
 </figure>
 </center><br>
@@ -39,14 +39,14 @@ Since all euro countries share the same nominal exchange rate and foreign CPI, G
 <br>
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Germany Unemployment Rate.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Germany Unemployment Rate.png" class="padded" />
   <figcaption>Figure 2: Tradingeconomics, <a href="https://tradingeconomics.com/germany/unemployment-rate">Germany Unemployment Rate</a></figcaption>
 </figure>
 </center><br>
 
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Germany part time employment as percent of total.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Germany part time employment as percent of total.png" class="padded" />
   <figcaption>Figure 3: Worldbank, <a href="https://data.worldbank.org/indicator/SL.TLF.PART.ZS?locations=DE">Germany part time employment as % of total</a></figcaption>
 </figure>
 </center><br>
@@ -57,7 +57,7 @@ Without salary increases, there is drastically less potential for rising househo
 <br>
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Germany trade balance.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Germany trade balance.png" class="padded" />
   <figcaption>Figure 4: Macrotrends, <a href="https://www.macrotrends.net/countries/DEU/germany/trade-balance-deficit">Germany trade balance</a></figcaption>
 </figure>
 </center><br>
@@ -81,7 +81,7 @@ Now you’d ask, where would both Germany & China invest circa $300B dollars per
 <br>
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Germany net international investment position.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Germany net international investment position.png" class="padded" />
   <figcaption>Figure 6: Tradingeconomics, <a href="https://tradingeconomics.com/germany/net-international-investment-position-eurostat-data.html#:~:text=Germany%20%2D%20Net%20international%20investment%20position%20was%2068.30%20%25%20of%20GDP%20in,GDP%20in%20December%20of%202002.">Germany net international investment position</a></figcaption>
 </figure>
 </center><br>
@@ -96,7 +96,7 @@ Ultimately, this pursuit resulted in capital flowing from countries with high re
  
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Reflexive link.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Reflexive link.png" class="padded" />
 </figure>
 </center><br>
  
@@ -111,7 +111,7 @@ Since the Bush administration historical trespassing of supra-national entities 
 <br>
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Global trade to GDP.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Global trade to GDP.png" class="padded" />
   <figcaption>Figure 7: Worldbank, <a href="https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS">Global trade to GDP</a></figcaption>
 </figure>
 </center><br>
