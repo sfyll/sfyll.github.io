@@ -10,7 +10,6 @@ import 'roboto-mono-webfont'
 import './assets/theming.css'
 import Heading from './components/Heading'
 import Subheading from './components/Subheading'
-import Butter from 'buttercms'
 import VueGtag from "vue-gtag";
 import { createMetaManager } from 'vue-meta'
 
@@ -25,7 +24,6 @@ Unicon.add([uniSun, uniMoon, uniGithub, uniBars, uniFavoriteMonochrome, uniCheck
 
 app.config.productionTip = false;
 app.config.globalProperties.$bodyElement = null;
-app.config.globalProperties.$cms = Butter('81218e35deb9ccf0d22dbf9995b2c1d019fbd582');
 
 app.component('heading', Heading)
 app.component('subheading', Subheading)
