@@ -96,7 +96,7 @@ Ultimately, this pursuit resulted in capital flowing from countries with high re
  
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Reflexive Link.png" class="padded" />
+  <img src="./blog_post/the-great-compartmentalization/Reflexive link.png" class="padded" />
 </figure>
 </center><br>
  
