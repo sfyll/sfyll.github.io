@@ -67,7 +67,7 @@ This has led to a strong and rising current account surplus.
 <br>
 <center>
 <figure>
-  <img src="./blog_post/the-great-compartmentalization/Germany current account to GDP.png" class="padded" />
+  <img src="/blog_post/the-great-compartmentalization/Germany current account to GDP.png" class="padded" />
   <figcaption>Figure 5: Tradingeconomics, <a href="https://tradingeconomics.com/germany/current-account-to-gdp">Germany current account to GDP</a></figcaption>
 </figure>
 </center><br>
