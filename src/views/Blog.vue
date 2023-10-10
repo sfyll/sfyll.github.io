@@ -68,7 +68,16 @@ export default {
     },
     methods: {
     async listPosts(page) {
-        fetch('blog_post/meta_data.json')
+        let domain;
+
+        if (window.location.hostname === "localhost") {
+            domain = "http://localhost:8080";
+        } else {
+            domain = "https://example.com";
+        }
+
+        const url = `${domain}/blog_post/meta_data.json`;
+        fetch(url)
                 .then(response => response.json())
                 .then(data => {
                     const postsPerPage = 15;
