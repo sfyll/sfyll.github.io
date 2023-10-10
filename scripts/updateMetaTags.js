@@ -25,7 +25,7 @@ if (fs.existsSync(htmlFilePath)) {
     { name: 'description', content: post.summary },
     { property: 'og:title', content: post.title },
     { property: 'og:description', content: post.summary },
-    { property: 'og:image', content: `/blog_post/${post.slug}/${post.featured_image}` },
+    { property: 'og:image', content: `www.sfyl.xyz/blog_post/${post.slug}/${post.featured_image}` },
     { name: 'twitter:card', content: "summary"},
     { name: 'twitter:site', content: "@SFYLL"},
     ];
