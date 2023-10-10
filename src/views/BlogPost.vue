@@ -47,10 +47,10 @@ export default {
         updateMeta(meta, slug) {  // Method to update the meta tags
       document.title = meta.title;
       
-      this.setMetaTag('property', 'description', meta.summary);
+      this.setMetaTag('name', 'description', meta.summary);
       this.setMetaTag('property', 'og:title', meta.title);
       this.setMetaTag('property', 'og:description', meta.summary);
-      this.setMetaTag('property', 'og:image', `https://www.sfyl.xyz/${slug}/${meta.featured_image}`);
+      this.setMetaTag('property', 'og:image', `https://www.sfyl.xyz/blog_post/${slug}/${meta.featured_image}`);
       this.setMetaTag('name', 'twitter:card', 'summary');
       this.setMetaTag('name', 'twitter:site', '@SFYLL');
     },
