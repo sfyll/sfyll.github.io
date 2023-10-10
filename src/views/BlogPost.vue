@@ -47,25 +47,26 @@ export default {
         updateMeta(meta, slug) {  // Method to update the meta tags
       document.title = meta.title;
       
-      this.setMetaTag('description', meta.summary);
-      this.setMetaTag('og:title', meta.title);
-      this.setMetaTag('og:description', meta.summary);
-      this.setMetaTag('og:image', `https://www.sfyl.xyz/${slug}/${meta.featured_image}`);
-      this.setMetaTag('twitter:card', `summary`);
-      this.setMetaTag('twitter:site', `@SFYLL`);
+      this.setMetaTag('property', 'description', meta.summary);
+      this.setMetaTag('property', 'og:title', meta.title);
+      this.setMetaTag('property', 'og:description', meta.summary);
+      this.setMetaTag('property', 'og:image', `https://www.sfyl.xyz/${slug}/${meta.featured_image}`);
+      this.setMetaTag('name', 'twitter:card', 'summary');
+      this.setMetaTag('name', 'twitter:site', '@SFYLL');
     },
-    setMetaTag(property, content) {  // Helper method to set a meta tag
-      let metaTag = document.head.querySelector(`meta[property="${property}"]`);
-      
-      if (!metaTag) {
-        metaTag = document.createElement('meta');
-        metaTag.setAttribute('property', property);
-        document.head.appendChild(metaTag);
-      }
-      
-      metaTag.setAttribute('content', content);
-      metaTag.setAttribute('content-controlled', 'true'); 
+    setMetaTag(type, key, content) {  // Helper method to set a meta tag
+        let metaTag = document.head.querySelector(`meta[${type}="${key}"]`);
+        
+        if (!metaTag) {
+            metaTag = document.createElement('meta');
+            metaTag.setAttribute(type, key);
+            document.head.appendChild(metaTag);
+        }
+        
+        metaTag.setAttribute('content', content);
+        metaTag.setAttribute('content-controlled', 'true');  // Add custom attribute
     },
+
     removeMetaTags() {  // Method to remove the meta tags
       const metaTags = document.head.querySelectorAll('meta[content-controlled="true"]');
       metaTags.forEach(tag => document.head.removeChild(tag));
