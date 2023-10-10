@@ -37,9 +37,28 @@
 
 
 <script>
+import { useMeta } from 'vue-meta'
+
+
 export default {
     name: 'Home',
     components: {
+    },
+    setup () {
+        useMeta({
+        htmlAttrs: { lang: 'en', amp: true },
+        title: 'The personal website of sfyl',
+        description: "High frequency trader turned byte generalist",
+        og: {
+            title: 'The personal website of sfyl',
+            description: 'High frequency trader turned byte generalist',
+            image:"https://www.sfyl.xyz/favicon.ico"
+        },
+        twitter: {
+            card: "summary"
+        }
+      })
+        
     },
     methods: {
         toggleMenu: function() {
