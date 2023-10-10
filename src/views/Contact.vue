@@ -29,6 +29,10 @@ export default {
             description: "Get sfyl's contact",
             image:"https://www.sfyl.xyz/transponder_snail.jpg"
         },
+        twitter: {
+            card: "summary",
+            site: "@SFYLL"
+        }
         })
     }
 }
