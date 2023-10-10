@@ -19,7 +19,6 @@ app.use(VueGtag, {
   config: { id: 'G-Q6423EHZHZ' }
 }, router);
 
-
 Unicon.add([uniSun, uniMoon, uniGithub, uniBars, uniFavoriteMonochrome, uniCheckCircleMonochrome, uniArrowLeft, uniArrowRight])
 
 app.config.productionTip = false;
