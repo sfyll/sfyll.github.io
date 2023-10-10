@@ -47,6 +47,10 @@ export default {
             description: 'A quick summary of my different works',
             image:"https://www.sfyl.xyz/favicon.ico"
         },
+        twitter: {
+            card: "summary",
+            site: "@SFYLL"
+        }
       })
     },
 }

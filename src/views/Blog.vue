@@ -60,6 +60,10 @@ export default {
             description: "sfyl's blog, mostly about crypto and finance",
             image:"https://www.sfyl.xyz/favicon.ico"
         },
+        twitter: {
+            card: "summary",
+            site: "@SFYLL"
+        }
         })
     },
     methods: {

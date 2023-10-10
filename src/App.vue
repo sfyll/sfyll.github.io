@@ -3,7 +3,6 @@
         <metainfo>
             <template v-slot:title="{ content }">{{ content }}</template>
         </metainfo>
-        <meta name="twitter:site" content="@SFYLL">
         <div id="app" class="max-w-screen-lg mx-auto px-6 py-4 md:px-4 md:py-10">
             <div v-if="!isMobile" class="relative mb-8 rounded-b-lg" id="nav">
                 <header class="flex items-center flex-wrap justify-between">
@@ -130,28 +129,12 @@
 
 <script>
 import ThemeSwitcher from '@/components/ThemeSwitcher'
-import { useMeta } from 'vue-meta'
 
 export default {
     components: {
         ThemeSwitcher,
     },
-    setup () {
-        useMeta({
-        htmlAttrs: { lang: 'en', amp: true },
-        title: 'The personal website of sfyl',
-        description: "High frequency trader turned byte generalist",
-        og: {
-            title: 'The personal website of sfyl',
-            description: 'High frequency trader turned byte generalist',
-            image:"https://www.sfyl.xyz/favicon.ico"
-        },
-        twitter: {
-            card: "summary"
-        }
-      })
-        
-    },
+
     data() {
         return {
             isMobile: window.innerWidth <= 768, // Assuming 768px is your mobile breakpoint
