@@ -55,7 +55,8 @@ export default {
             image:"https://www.sfyl.xyz/favicon.ico"
         },
         twitter: {
-            card: "summary"
+            card: "summary",
+            site: "@SFYLL"
         }
       })
         
