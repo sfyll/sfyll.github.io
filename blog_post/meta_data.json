@@ -1,5 +1,18 @@
 [
     {
+        "slug": "the-perils-of-power",
+        "categories": [
+            "Economics",
+            "Blockchain",
+            "Social",
+            "Philosophy"
+        ],
+        "featured_image": "cover-picture.jpeg",
+        "created": "2023-10-10",
+        "title": "The Perils of Power: Bridging the Social and Consensus Layers to Secure Blockchain's Future",
+        "summary": "The essay explores the risks of blockchain monopolies and advocates for linking social and consensus layers to secure the technology's future"
+    },
+    {
         "slug": "ethereum-blockspace-an-alternative-future",
         "categories": [
             "Economics",

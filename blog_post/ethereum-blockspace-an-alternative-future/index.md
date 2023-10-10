@@ -28,13 +28,13 @@ The goal of this essay is not to present an in-depth, historical depiction of Et
 ## **Pre 2020: an isolated system**
 <p></p>
 <br>
-This world takes place in the early Ethereum days where most development is either experimental or too niche to have an oversized impact on blockspace economics. DeFi is known by few and as such not generating enough transactional demand. Under this paradigm, most, if not all, blockspace economic shifts come from top-down changes, or enshrined changes as early missteps get fixed along the way. You can consider most opcode gas cost specification changes, which generally observe low per-transaction impact but do shift some blockspace demand as transactions get summed up. For example, <a href="https://eips.ethereum.org/EIPS/eip-2929">EIP-2929</a>
+This world takes place in the early Ethereum days where most development is either experimental or too niche to have an oversized impact on blockspace economics. DeFi is known by few and as such not generating enough transactional demand. Under this paradigm, most, if not all, blockspace economic shifts come from top-down changes, or enshrined changes as early missteps get fixed along the way. You can consider most opcode gas cost specification changes, which generally observe low per-transaction impact but do shift some blockspace demand as transactions get summed up. For example, <a href="https://eips.ethereum.org/EIPS/eip-2929" target="_blank">EIP-2929</a>
  was proposed as a response to the 2016 Shanghai DOS attack.
 
 ## **Post 2020: Transactional blossoming**
 <p></p>
 <br>
-DeFi growth, kickstarted during DeFi summer in 2020, led to the first major shift in blockspace economics. As blocks became composed of valuable transactions, it led to the commoditization of so-called MEV bots and an increase in their blockspace footprint. <a href="https://arxiv.org/pdf/1904.05234.pdf">Part of Phillip Daian's and co's vision</a> became reality.
+DeFi growth, kickstarted during DeFi summer in 2020, led to the first major shift in blockspace economics. As blocks became composed of valuable transactions, it led to the commoditization of so-called MEV bots and an increase in their blockspace footprint. <a href="https://arxiv.org/pdf/1904.05234.pdf" target="_blank">Part of Phillip Daian's and co's vision</a> became reality.
 <p></p>
 <br>
 Since DeFi protocols handle valuable assets, and their value can be derived through a large variety of pricing functions, it has created a gas price lower bound which is partly linked to DeFi biggest assets’ volatility.
@@ -72,7 +72,7 @@ Consequently, all the focus today is on how to enshrine PBS and reduce centraliz
 ## **MEV-Awareness**
 <p></p>
 <br>
-From a protocol perspective, MEV is a form of leakage. Indeed, the extra subsidy that goes to the proposer is value that could have been captured by the protocol itself, and protocols have become well aware of that. Take Uniswap, for example, which is now mostly focusing on patching these leaks as put forward by <a href="https://open.spotify.com/episode/4pn7UD3LIpzCSTOZfUv8dB?si=d7a8814e169d4c78">Dan Robinson</a>.
+From a protocol perspective, MEV is a form of leakage. Indeed, the extra subsidy that goes to the proposer is value that could have been captured by the protocol itself, and protocols have become well aware of that. Take Uniswap, for example, which is now mostly focusing on patching these leaks as put forward by <a href="https://open.spotify.com/episode/4pn7UD3LIpzCSTOZfUv8dB?si=d7a8814e169d4c78" target="_blank">Dan Robinson</a>.
 <p></p>
 <br>
 Indeed, Uniswap X will allow for the de-duplication of arbitrage transactions, as market makers and users will agree on a price off-chain and just settle on-chain, thereby removing the backrunning leg. On the other hand, hooks create the ability to kick back the extracted value to any desired entity.
