@@ -15,36 +15,64 @@
 
 <script>
 import { parseISO, format } from 'date-fns'
-import { useMeta } from 'vue-meta'
 import { marked } from 'marked'
 
 export default {
     data() {
         return {
-      postMeta: null,
       title: '',
-      date: ''
+      date: '',
+      metaData: null,
     }
     },
     setup() {
-
-    useMeta({
-        title: 'The blog section of sfyl',
-        htmlAttrs: { lang: 'en', amp: true },
-        description: "sfyl blog, mostly about crypto and finance",
-        og: {
-            title: "The blog section of sfyl",
-            description: "sfyl blog, mostly about crypto and finance",
-            image:"https://www.sfyl.xyz/favicon.ico"
-        },
-    });
     },
+
     methods: {
         convertIsoDate(iso_date) {
             return format(parseISO(iso_date), 'PP p')
         },
+        async fetchMetaData(slug) {
+            try {
+                const response = await fetch('/blog_post/meta_data.json');
+                const data = await response.json();
+                const meta = data.find(post => post.slug === slug);
+                this.metaData = meta;
+
+                this.updateMeta(meta, slug);  // Call updateMeta after fetching the metadata
+            } catch (error) {
+                console.error("Error fetching post metadata:", error);
+            }
+        },
+        updateMeta(meta, slug) {  // Method to update the meta tags
+      document.title = meta.title;
+      
+      this.setMetaTag('description', meta.summary);
+      this.setMetaTag('og:title', meta.title);
+      this.setMetaTag('og:description', meta.summary);
+      this.setMetaTag('og:image', `https://www.sfyl.xyz/${slug}/${meta.featured_image}`);
+      this.setMetaTag('twitter:card', `summary`);
+      this.setMetaTag('twitter:site', `@SFYLL`);
+    },
+    setMetaTag(property, content) {  // Helper method to set a meta tag
+      let metaTag = document.head.querySelector(`meta[property="${property}"]`);
+      
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('property', property);
+        document.head.appendChild(metaTag);
+      }
+      
+      metaTag.setAttribute('content', content);
+      metaTag.setAttribute('content-controlled', 'true'); 
+    },
+    removeMetaTags() {  // Method to remove the meta tags
+      const metaTags = document.head.querySelectorAll('meta[content-controlled="true"]');
+      metaTags.forEach(tag => document.head.removeChild(tag));
+    },
     },
     created() {
+        this.fetchMetaData(this.$route.params.post);
         fetch(`/blog_post/${this.$route.params.post}/index.md`)  // Assume markdown file extension
             .then(response => response.text())
             .then(markdown => {
@@ -61,6 +89,10 @@ export default {
             .catch(error => {
                 console.error("Error fetching post:", error);
             });
-    }
+    },
+    beforeRouteLeave(to, from, next) {
+    this.removeMetaTags();  // Remove the meta tags when navigating away
+    next();
+  }
 }
 </script>
