@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cd scripts/ && node updateMetaTags.js",
     "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve",
     "deploy": "gh-pages -d dist",
@@ -20,6 +20,7 @@
     "date-fns": "^2.28.0",
     "fs-extra": "^11.1.1",
     "gh-pages": "^6.0.0",
+    "jsdom": "^22.1.0",
     "marked": "^9.0.3",
     "roboto-mono-webfont": "^2.0.986",
     "simple-icons": "^5.0.0",
