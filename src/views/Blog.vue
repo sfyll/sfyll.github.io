@@ -73,7 +73,7 @@ export default {
         if (window.location.hostname === "localhost") {
             domain = "http://localhost:8080";
         } else {
-            domain = "https://example.com";
+            domain = "https://www.sfyl.xyz";
         }
 
         const url = `${domain}/blog_post/meta_data.json`;
