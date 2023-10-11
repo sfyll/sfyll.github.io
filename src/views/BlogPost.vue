@@ -53,6 +53,7 @@ export default {
       this.setMetaTag('property', 'og:image', `https://www.sfyl.xyz/blog_post/${slug}/${meta.featured_image}`);
       this.setMetaTag('name', 'twitter:card', 'summary');
       this.setMetaTag('name', 'twitter:site', '@SFYLL');
+      this.setMetaTag('name', 'theme-color', this.$store.state.dark ? "#2e3440" : "#eceff4");
     },
     setMetaTag(type, key, content) {  // Helper method to set a meta tag
         let metaTag = document.head.querySelector(`meta[${type}="${key}"]`);
