@@ -135,6 +135,18 @@ export default {
         ThemeSwitcher,
     },
 
+    watch: {
+        '$store.state.dark': {
+            immediate: true,
+            handler(newValue) {
+                const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+                if (metaThemeColor) {
+                    metaThemeColor.content = newValue ? "#2e3440" : "#eceff4";
+                }
+            },
+        },
+    },
+
     data() {
         return {
             isMobile: window.innerWidth <= 768, // Assuming 768px is your mobile breakpoint

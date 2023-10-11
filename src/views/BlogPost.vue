@@ -51,7 +51,9 @@ export default {
       this.setMetaTag('property', 'og:title', meta.title);
       this.setMetaTag('property', 'og:description', meta.summary);
       this.setMetaTag('property', 'og:image', `https://www.sfyl.xyz/blog_post/${slug}/${meta.featured_image}`);
-      this.setMetaTag('name', 'twitter:card', 'summary');
+      this.setMetaTag('property', 'og:url', `https://www.sfyl.xyz/blog/${slug}/`);
+      this.setMetaTag('name', 'twitter:image', `https://www.sfyl.xyz/blog_post/${slug}/${meta.featured_image}`);
+      this.setMetaTag('name', 'twitter:card', 'summary_large_image');
       this.setMetaTag('name', 'twitter:site', '@SFYLL');
       this.setMetaTag('name', 'theme-color', this.$store.state.dark ? "#2e3440" : "#eceff4");
     },
@@ -69,8 +71,12 @@ export default {
     },
 
     removeMetaTags() {  // Method to remove the meta tags
-      const metaTags = document.head.querySelectorAll('meta[content-controlled="true"]');
-      metaTags.forEach(tag => document.head.removeChild(tag));
+        const metaTags = document.head.querySelectorAll('meta[content-controlled="true"]');
+        metaTags.forEach(tag => {
+            if (tag.getAttribute('name') !== 'theme-color') {
+            document.head.removeChild(tag);
+            }
+        })
     },
     },
     created() {
@@ -93,8 +99,8 @@ export default {
             });
     },
     beforeRouteLeave(to, from, next) {
-    this.removeMetaTags();  // Remove the meta tags when navigating away
-    next();
+        this.removeMetaTags();  // Remove the meta tags when navigating away
+        next();
   }
 }
 </script>
