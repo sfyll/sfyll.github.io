@@ -53,7 +53,7 @@ export default {
       this.setMetaTag('property', 'og:image', `https://www.sfyl.xyz/blog_post/${slug}/${meta.featured_image}`);
       this.setMetaTag('property', 'og:url', `https://www.sfyl.xyz/blog/${slug}/`);
       this.setMetaTag('name', 'twitter:image', `https://www.sfyl.xyz/blog_post/${slug}/${meta.featured_image}`);
-      this.setMetaTag('name', 'twitter:card', 'summary_large_image');
+      this.setMetaTag('name', 'twitter:card', 'summary');
       this.setMetaTag('name', 'twitter:site', '@SFYLL');
       this.setMetaTag('name', 'theme-color', this.$store.state.dark ? "#2e3440" : "#eceff4");
     },
