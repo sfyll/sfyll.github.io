@@ -5,7 +5,8 @@
             <h2 class="subheading">Open Source Work</h2>
             <div>
                 <ul class="list">
-                <li><a href="https://pull.sfyl.xyz" target="_blank"><code>selecte-application</code></a>: selectively disclose content. a pull-driven and anonymous process.</li>
+                <li><a href="https://github.com/orgs/anon-abuse/repositories" target="_blank"><code>anon-abuse</code></a>: middleware to trustlessly create or extend semaphore groups</li>
+                <li><a href="https://pull.sfyl.xyz" target="_blank"><code>selecte-application</code></a>: selectively disclose content. a pull-driven and anonymous process</li>
                 <li><a href="https://github.com/keep-starknet-strange/madara/pull/967" target="_blank"><code>Madara &lt;&gt; Celestia</code></a>: use celestia as data-availability layer for the madara client</li>
                 <li><a href="https://github.com/SFYLL/TweetYourClippings" target="_blank"><code>TweetYourClippings</code></a>: randomly share your kindle clippings on twitter</li>
                 <li><a href="https://github.com/SFYLL/OptimisticRelaying" target="_blank"><code>OptimisticRelaying</code></a>: builder-proposer dispute resolution protocol</li>
