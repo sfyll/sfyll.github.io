@@ -172,13 +172,29 @@ export default {
         toggleMenu: function () {
             this.$store.commit('toggleMobileNav', false);
         },
-    },
-    mounted() {
-        const metaThemeColor = document.createElement('meta');
+        updateMetaThemeColor() {
+        const metaThemeColor = document.querySelector('meta[name="theme-color"]') || document.createElement('meta');
         metaThemeColor.name = "theme-color";
         metaThemeColor.content = this.$store.state.dark ? "#2e3440" : "#eceff4";
-        document.getElementsByTagName('head')[0].appendChild(metaThemeColor);
-        document.body.classList.add((this.$store.state.dark ? 'dark' : 'light'))
+        document.head.appendChild(metaThemeColor);
+    },
+    updateBodyClass() {
+        // Remove any existing theme classes
+        document.body.classList.remove('dark', 'light');
+        // Add the correct theme class
+        document.body.classList.add(this.$store.state.dark ? 'dark' : 'light');
+    },
+    ensureCorrectThemeIcon() {
+        // This will force the theme switcher to re-evaluate the correct icon after hydration
+        this.$nextTick(() => {
+            this.$forceUpdate();
+        });
+    }
+    },
+    mounted() {
+    this.updateMetaThemeColor();
+    this.updateBodyClass();
+    this.ensureCorrectThemeIcon();
     },
     beforeDestroy() {
         window.removeEventListener('resize', this.updateWindowSize);
