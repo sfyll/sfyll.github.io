@@ -22,7 +22,7 @@
                     </ul>
                     <div id="icons" class="md:text-right flex items-center md:justify-end">
                         <ThemeSwitcher />
-                        <a href="https://github.com/SFYLL/sfyll.github.io" title="View this website's source on GitHub">
+                        <a href="https://github.com/SFYLL/" title="Visit my GitHub">
                             <Unicon width="24" height="24" name="github" :fill="iconColor" />
                         </a>
                     </div>
@@ -47,7 +47,7 @@
                 <!-- Icons -->
                 <div>
                     <ThemeSwitcher />
-                    <a href="https://github.com/SFYLL/sfyll.github.io" title="View this website's source on GitHub">
+                    <a href="https://github.com/SFYLL/" title="Visit my GitHub">
                         <Unicon width="24" height="24" name="github" :fill="iconColor" />
                     </a>
                 </div>
