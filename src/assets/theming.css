@@ -226,4 +226,193 @@ code,
 /* purgecss end ignore */
 
   
+/* This is the container for a figure, used for centering. */
+.figure-container {
+  margin: 2rem 0;  
+}
 
+/* This targets the <figure> element itself. */
+.figure-container figure {
+  display: flex;             
+  flex-direction: column;    
+  align-items: center;
+  margin: 0; 
+  padding: 0;
+}
+
+/* This ensures all images within the container are responsive. */
+.figure-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* Matches your existing border-radius for images */
+}
+
+/* This styles the caption text below the image. */
+.figure-container figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.figure-container img.size-large {
+  max-width: 85%; /* Slightly narrower than full-width */
+}
+
+.figure-container img.size-medium {
+  max-width: 70%; /* This will likely match your desired "before" style */
+}
+
+.figure-container img.size-small {
+  max-width: 50%;
+}
+
+/*
+ * This styles the "padded" images specifically.
+ * It now uses your theme's variables for consistency.
+*/
+.figure-container img.padded {
+  padding: 1em;
+}
+
+.dark .figure-container img.padded {
+  background-color: var(--light-bg); /* Uses your existing dark-mode image background */
+}
+
+.light .figure-container img.padded {
+  background-color: #ffffff; /* A clean white background for light mode */
+  border: 1px solid #d8dee9;
+}
+
+
+/* This styles the figcaption text to match your theme. */
+.dark .figure-container figcaption {
+  color: var(--dark-text);
+  opacity: 0.8; /* Makes it slightly less prominent than main text */
+}
+
+.light .figure-container figcaption {
+  color: var(--light-text);
+  opacity: 0.8;
+}
+.aside {
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+.dark .aside {
+  background-color: rgba(0, 0, 0, 0.2); /* Darker, inset background */
+  border-left: 3px solid var(--dark-link-color);
+}
+.light .aside {
+  background-color: rgba(0, 0, 0, 0.05); /* Lighter, inset background */
+  border-left: 3px solid var(--link-color);
+}
+
+/* 2. Styling to center KaTeX math blocks */
+.math-block {
+  text-align: center;
+  /* For very long equations on small screens */
+  overflow-x: auto;
+  padding: 1em 0;
+}
+
+/* 3. Styling for blockquotes inside a list (Ørsted/Netflix examples) */
+li > blockquote {
+  background-color: transparent; /* Remove default background */
+  border-left: none; /* Remove the default large border */
+  margin: 0.75em 0 0 0; /* Adjust margins to feel "inside" the list item */
+  padding: 0.75em 1.5em; /* Add padding for the inset look */
+  font-style: italic;
+  font-size: 0.95em;
+}
+.dark li > blockquote {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.light li > blockquote {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 1. Default List Styling (Tightly Spaced) */
+.blog-content ul {
+  padding-left: 30px;
+  list-style-position: outside;
+  /* Note: No margin-bottom on <li> by default */
+}
+
+/* 2. MODIFIER for Spaced Lists (e.g., Ørsted/Netflix) */
+.blog-content .list--spacious li {
+  margin-bottom: 1.5em; /* Apply large spacing only to lists with this class */
+}
+
+
+/* 4. Math Block Styling */
+.math-block {
+  text-align: center;
+  overflow-x: auto;
+  padding: 1.5em 0; /* Default vertical padding for standalone math */
+}
+
+/* 5. Styling for blockquotes inside any list remains the same */
+.blog-content li > blockquote {
+  background-color: transparent;
+  border-left: none;
+  margin: 1em 0 0 0;
+  padding: 0.75em 1.5em;
+  font-style: italic;
+  font-size: 0.95em;
+}
+.dark .blog-content li > blockquote {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.light .blog-content li > blockquote {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --- Styling for Definition Lists (Key-Value Pairs) --- */
+
+.key-value-list {
+  margin: 1em 0;
+}
+
+/* This is the "Key" or term (e.g., "Annualized revenues") */
+.key-value-list dt {
+  font-weight: bold;
+}
+
+/* This is the "Value" or description (where our math lives) */
+.key-value-list dd {
+  margin-left: 0; /* Reset browser default indent */
+  margin-bottom: 1.5em; /* Space between pairs */
+}
+
+/* Target the KaTeX block inside our list's <dd> tag */
+.key-value-list dd .katex-display {
+  text-align: center;
+  padding-top: 0.5em; /* Small space between key and value */
+  padding-bottom: 0;
+}
+
+/* Optional: a subtle divider for visual separation */
+.list-divider {
+  height: 1px;
+  border: 0;
+  margin: 2em 25%;
+}
+.dark .list-divider {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.light .list-divider {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.katex-display {
+  display: block;        /* Ensure it behaves like a block */
+  text-align: center;    /* Center the equation */
+  overflow-x: auto;      /* Add a scrollbar if the equation is too wide */
+  overflow-y: hidden;    /* Hide any potential vertical overflow */
+  padding-top: 0.5em;    /* Add some breathing room on top */
+  padding-bottom: 0.5em; /* Add some breathing room on the bottom */
+}
