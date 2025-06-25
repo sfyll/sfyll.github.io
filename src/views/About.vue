@@ -5,6 +5,7 @@
             <h2 class="subheading">Open Source Work</h2>
             <div>
                 <ul class="list">
+                <li><a href="https://github.com/SeismicSystems" target="_blank"><code>seismic</code></a>: Encrypted evm</li>
                 <li><a href="https://github.com/sfyll/OrdinArb" target="_blank"><code>ordinArb</code></a>: bitcoin dark forest explorer</li>
                 <li><a href="https://github.com/orgs/anon-abuse/repositories" target="_blank"><code>anon-abuse</code></a>: zkhack 11/23 award-winning middleware to trustlessly create or extend semaphore groups</li>
                 <li><a href="https://pull.sfyl.xyz" target="_blank"><code>selecte-application</code></a>: selectively disclose content. a pull-driven and anonymous process</li>
