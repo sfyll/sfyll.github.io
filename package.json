@@ -7,7 +7,7 @@
     "build": "vue-cli-service build && cd scripts/ && node updateMetaTags.js",
     "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages --dotfiles -d dist",
     "deployjob": "gh-pages -d dist -b gh-pages -r https://${GITHUB_TOKEN}@github.com/SFYLL/sfyll.github.io.git",
     "serve-dist": "http-server dist"
   },
