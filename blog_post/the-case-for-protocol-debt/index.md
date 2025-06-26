@@ -2,7 +2,7 @@
 title: 'Protocol Debt: Turning DAOs into Defensible Growth Engines'
 date: '2025-06-25'
 summary: 'The essay explores the ill-defined capital structure of DeFi protocols and argues for a new, more ambitious and defensible chapter of growth'
-featured_image: 'cover-picture.png'
+featured_image: 'cover-picture.jpg'
 categories:
   - Economics
   - Blockchain
