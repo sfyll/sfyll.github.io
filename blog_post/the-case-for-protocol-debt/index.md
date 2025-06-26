@@ -83,7 +83,6 @@ Using the [TokenLogic revenue dashboard](https://aave.tokenlogic.xyz/revenue):
   <dt>Net margin</dt>
   <dd>$$\frac{\$43.5\text{m}}{\$106.8\text{m}} = 41\%$$</dd>
 </dl>
-<br>
 
 The operating metrics are impressive; few protocols can match a 41% net margin. Yet, at a \$4b market capitalisation, the **ROE is barely 1%**. As such, each dollar used for buy-backs purchases an earning stream of just one cent per year, while token-holders require twenty-five cents. Buy-backs therefore destroy value; reallocating cash to higher-return projects is the rational alternative.
 
@@ -103,7 +102,6 @@ The V4 upgrade—dubbed the “largest budget in Aave DAO history” in a [gover
   <dt>Project-level ROE</dt>
   <dd>$$\frac{\$4.35\,\text{m}}{\$13\,\text{m}} \approx 33.5\%$$</dd>
 </dl>
-<br>
 
 Even under a punitive 24% hurdle, the V4 upgrade delivers a project-level return exceeding 30%. This confirms that attractive reinvestment opportunities exist; they are simply starved of appropriately priced capital. Aave’s treasury policy should prioritise funding these initiatives and, when equity proves too costly, rely on debt—a long-proven strategy in traditional finance.
 <br>
@@ -137,7 +135,6 @@ Two recent examples from traditional markets illustrate this playbook:
     This flexibility, enabled by cheaper debt financing, was directly linked to their ability to commit over $1 billion to a new production hub—a long-term growth investment.
   </li>
 </ul>
-<br>
 
 A balanced capital structure isn’t only an offensive tool—it also provides defence. Moderate leverage works as a poison-pill: it consumes the borrowing capacity that would otherwise tempt an acquirer. With reliable cash flows, an asset-light model and zero debt, Aave is almost a textbook acquisition target for leveraged-buyout funds. As the expected returns on such a deal rise, traditional investors will eventually find it worth clearing the legal hurdles to take control. That is unless Aave pre-emptively loads its own balance-sheet with cheaper debt.
 <br>
