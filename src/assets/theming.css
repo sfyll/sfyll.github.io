@@ -137,15 +137,13 @@ h2 {
     list-style-position: inside;
 }
 
-code,
-.code {
+.inline-code {
   font-size: 1.125rem;
   line-height: 1.6;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0.2em 0.4em; /* Add some padding for better visuals */
   margin: 0;
   font-size: 85%;
+  background-color: rgba(128, 128, 128, 0.1); /* Add a subtle background */
   border-radius: 3px;
 }
 
@@ -222,8 +220,6 @@ code,
 .light a:visited {
     color:var(--link-color);
 }
-
-/* purgecss end ignore */
 
   
 /* This is the container for a figure, used for centering. */
@@ -416,3 +412,6 @@ li > blockquote {
   padding-top: 0.5em;    /* Add some breathing room on top */
   padding-bottom: 0.5em; /* Add some breathing room on the bottom */
 }
+
+/* purgecss end ignore */
+
