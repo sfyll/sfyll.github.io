@@ -42,6 +42,7 @@ We first pin down each token’s baseline return with the equity-market CAPM—r
 Because crypto swings harder than stocks, we then tack on an extra spread equal to the Bitwise-10/S\&P 500 volatility ratio minus 1, scaled by the same ERP:
 
 $$K_e = R_f + \beta_{S\&P}\,\text{ERP} + \left(\frac{\sigma_{\text{BITW}}}{\sigma_{S\&P}}-1\right)\,\text{ERP}$$
+<br>
 
 This heuristic patches CAPM’s blind spot on idiosyncratic risk. A quick sanity check helps our case: it would be hard to argue that an $80 billion listed firm should still clear a lower hurdle rate than a $3 billion protocol.
 
@@ -136,6 +137,7 @@ Two recent examples from traditional markets illustrate this playbook:
     This flexibility, enabled by cheaper debt financing, was directly linked to their ability to commit over $1 billion to a new production hub—a long-term growth investment.
   </li>
 </ul>
+<br>
 
 A balanced capital structure isn’t only an offensive tool—it also provides defence. Moderate leverage works as a poison-pill: it consumes the borrowing capacity that would otherwise tempt an acquirer. With reliable cash flows, an asset-light model and zero debt, Aave is almost a textbook acquisition target for leveraged-buyout funds. As the expected returns on such a deal rise, traditional investors will eventually find it worth clearing the legal hurdles to take control. That is unless Aave pre-emptively loads its own balance-sheet with cheaper debt.
 <br>
