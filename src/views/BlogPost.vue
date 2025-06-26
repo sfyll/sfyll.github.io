@@ -30,7 +30,7 @@ export default {
     methods: {
         convertIsoDate(iso_date) {
             if (!iso_date) return '';
-            return format(parseISO(iso_date), 'PP p');
+            return format(parseISO(iso_date), 'PP');
         },
         async fetchAndRenderPost(slug) {
         try {
@@ -51,7 +51,8 @@ export default {
                         // renderToString converts the LaTeX into an HTML string
                         return katex.renderToString(latex, {
                             displayMode: true,
-                            throwOnError: false
+                            throwOnError: false,
+                            output: 'mathml'
                         });
                     } catch (e) {
                         console.error("KaTeX renderToString error:", e);
@@ -103,7 +104,7 @@ export default {
             })
         },
     },
-    created() {
+    mounted() {
         this.fetchAndRenderPost(this.$route.params.post);
     },
     beforeRouteLeave(to, from, next) {
