@@ -35,20 +35,16 @@ async function updateMetaTags() {
                 if (!head) continue; // Skip if no <head> tag
 
                 // 3. Define and inject the meta tags
-                const imageUrl = post.featured_image
-                    ? `https://www.sfyl.xyz/blog_post/${slug}/${post.featured_image}`
-                    : null;
-
                 const metaInfo = [
                     { name: 'description', content: post.summary },
                     { property: 'og:title', content: post.title },
                     { property: 'og:description', content: post.summary },
-                    imageUrl ? { property: 'og:image', content: imageUrl } : null,
+                    { property: 'og:image', content: `https://www.sfyl.xyz/blog_post/${slug}/${post.featured_image}` },
                     { property: 'og:url', content: `https://www.sfyl.xyz/blog/${slug}/` },
-                    imageUrl ? { name: 'twitter:image', content: imageUrl } : null,
-                    { name: 'twitter:card', content: imageUrl ? "summary_large_image" : "summary" },
+                    { name: 'twitter:image', content: `https://www.sfyl.xyz/blog_post/${slug}/${post.featured_image}` },
+                    { name: 'twitter:card', content: "summary_large_image" }, // summary_large_image is often preferred over summary
                     { name: 'twitter:site', content: "@SFYLL" },
-                ].filter(Boolean);
+                ];
 
                 for (const meta of metaInfo) {
                     // This logic correctly creates a new tag if it doesn't exist.

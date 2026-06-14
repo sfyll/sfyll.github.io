@@ -1,17 +1,5 @@
 [
     {
-        "slug": "robotics-index",
-        "categories": [
-            "Robotics",
-            "Automation",
-            "Industrials",
-            "Finance"
-        ],
-        "created": "2026-06-14",
-        "title": "Robotics Index",
-        "summary": "A compact robotics and automation watch list focused on actuators, bearings, motion control, sensors, and industrial automation suppliers"
-    },
-    {
         "slug": "the-case-for-protocol-debt",
         "categories": [
             "Economics",
